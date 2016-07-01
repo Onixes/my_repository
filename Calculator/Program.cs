@@ -10,10 +10,11 @@ namespace Calculator
     {
         private Dictionary<string, Func<double, double, double>> container = new Dictionary<string, Func<double, double, double>>
         {
-            ["+"] = (x,y) => x + y,
-            ["-"] = (x,y) => x - y,
-            ["/"] = (x,y) => x / y,
-            ["*"] = (x,y) => x * y
+            ["+"] = (x, y) => x + y,
+            ["-"] = (x, y) => x - y,
+            ["/"] = (x, y) => x / y,
+            ["*"] = (x, y) => x * y,
+            ["mod"] = (x,y) => x % y
         };
 
         public double Calc(string str, double x, double y)
